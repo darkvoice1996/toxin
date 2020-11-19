@@ -1,0 +1,23 @@
+{
+  "name": "toxin",
+  "version": "1.0.0",
+  "description": "Exam project for \"Full Stack Development\" by Alexandr Spiridonov",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkvoice1996/toxin.git"
+  },
+  "author": "Alexandr Spiridonov <darkvoice1996@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darkvoice1996/toxin/issues"
+  },
+  "homepage": "https://github.com/darkvoice1996/toxin#readme",
+  "dependencies": {
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0"
+  }
+}
