@@ -16,7 +16,10 @@
     "url": "https://github.com/darkvoice1996/toxin/issues"
   },
   "homepage": "https://github.com/darkvoice1996/toxin#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^5.0.0-alpha.14",
     "webpack": "^5.6.0",
     "webpack-cli": "^4.2.0"
   }

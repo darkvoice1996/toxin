@@ -1,1 +1,4 @@
-console.log('Work')
+import {newFunc} from "./test";
+
+
+newFunc()
