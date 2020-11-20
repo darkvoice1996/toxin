@@ -1,6 +1,4 @@
-
-import {newFunc} from "./test";
+// Полифил. Должен находиться в самом верху
+// import {newFunc} from "./test";
 
 import './styles.css'
-
-newFunc()
