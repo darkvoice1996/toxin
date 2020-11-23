@@ -4,9 +4,3 @@
 
 @import "fonts/font-face.scss";
 
-.test {
-  @include opensans(40px, red, 400)
-}
-.test2 {
-  @include montserrat(40px, red, 400)
-}
