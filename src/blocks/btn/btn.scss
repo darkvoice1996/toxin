@@ -1,0 +1,66 @@
+.btn {
+
+  // Purple Button
+
+  position: relative;
+  width: 99px;
+  height: 44px;
+
+  box-sizing: border-box;
+  border: none;
+  border-radius: 22px;
+
+  @include montserrat(12px, $bgc, 700);
+  text-transform: uppercase;
+
+  background: $gradient_primary;
+
+  cursor: pointer;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $bgc;
+    opacity: 0.5;
+  }
+
+  &:active {
+    top: 1px;
+  }
+
+  // White Button
+  &_white {
+
+    border: 2px solid transparent;
+
+    background: radial-gradient(circle, white, white), $gradient_primary;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    color: $purple;
+
+    &:hover {
+      color: $purple;
+      opacity: 0.5;
+    }
+  }
+
+  &_minimal {
+    width: auto;
+    height: auto;
+
+    border: none;
+    background: none;
+
+    color: $purple;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      color: $dark_s50;
+    }
+  }
+}

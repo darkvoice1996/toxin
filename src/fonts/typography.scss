@@ -1,0 +1,17 @@
+.title {
+  @include montserrat(24px, $dark_s100, 700);
+}
+
+.subtitle {
+  @include montserrat(19px, $dark_s100, 700);
+}
+
+.label {
+  @include montserrat(12px, $dark_s100, 700);
+  text-transform: uppercase;
+}
+
+.text {
+  @include montserrat(14px, $dark_s75, 400);
+}
+

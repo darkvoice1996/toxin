@@ -1,0 +1,84 @@
+body {
+  background-color: #F4F4F6;
+}
+
+.ui-kit-colors {
+  &__square {
+    width: 14.286rem;
+    height: 3.571rem;
+
+    margin: 1.071rem;
+
+    border-radius: 0.714rem;
+
+    text-align: center;
+
+    color: black;
+
+    font-size: 1.071rem;
+    line-height: 50px;
+  }
+
+  .dark_s100 {
+    background-color: $dark_s100;
+  }
+
+  .dark_s75 {
+    background-color: $dark_s75;
+  }
+
+  .dark_s50 {
+    background-color: $dark_s50;
+  }
+
+  .dark_s25 {
+    background-color: $dark_s25;
+  }
+
+  .dark_s5 {
+    background-color: $dark_s5;
+  }
+
+  .dark_s10 {
+    background-color: $dark_s10;
+  }
+
+  .purple {
+    background-color: $purple;
+  }
+
+  .green {
+    background-color: $green;
+  }
+
+  .gradient_green {
+    background: $gradient_primary;
+  }
+
+  .gradient_purple {
+    background: $gradient_secondary;
+  }
+}
+
+.ui-comment {
+  text-align: center;
+  font-size: 16px;
+  padding: 2px;
+  margin: 0;
+  background-color: $green;
+}
+
+.ui-kit-box {
+  display: inline-block;
+
+  margin: 10px;
+
+  float: left;
+
+  border: $dark_s25 solid 1px;
+  border-radius: 10px;
+  @include box-shadow_global;
+
+  background-color: $bgc;
+
+}

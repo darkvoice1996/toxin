@@ -1,18 +1,179 @@
 @charset "UTF-8";
-@import "~normalize.css";
+@import '~normalize.css';
 @font-face {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat";
   src: url("./fonts/Montserrat-Regular.eot");
   src: local("☺"), url("./fonts/Montserrat-Regular.woff") format("woff"), url("./fonts/Montserrat-Regular.ttf") format("truetype"), url("./fonts/Montserrat-Regular.svg") format("svg");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: "OpenSans-Regular";
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Bold.eot");
+  src: local("☺"), url("./fonts/Montserrat-Bold.woff") format("woff"), url("./fonts/Montserrat-Bold.ttf") format("truetype"), url("./fonts/Montserrat-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
   src: url("./fonts/OpenSans-Regular.eot");
   src: url("./fonts/OpenSans-Regular.woff") format("woff"), url("./fonts/OpenSans-Regular.svg") format("svg"), url("./fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans-Bold.eot");
+  src: url("./fonts/OpenSans-Bold.woff") format("woff"), url("./fonts/OpenSans-Bold.ttf") format("truetype"), url("./fonts/OpenSans-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F2041;
+}
+
+.subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: #1F2041;
+}
+
+.label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1F2041;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.btn {
+  position: relative;
+  width: 99px;
+  height: 44px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
+  cursor: pointer;
+}
+.btn:active, .btn:focus {
+  outline: none;
+}
+.btn:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+.btn:active {
+  top: 1px;
+}
+.btn_white {
+  border: 2px solid transparent;
+  background: radial-gradient(circle, white, white), linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  color: #bc9cff;
+}
+.btn_white:hover {
+  color: #bc9cff;
+  opacity: 0.5;
+}
+.btn_minimal {
+  width: auto;
+  height: auto;
+  border: none;
+  background: none;
+  color: #bc9cff;
+  text-transform: uppercase;
+}
+.btn_minimal:hover {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+body {
+  background-color: #F4F4F6;
+}
+
+.ui-kit-colors__square {
+  width: 14.286rem;
+  height: 3.571rem;
+  margin: 1.071rem;
+  border-radius: 0.714rem;
+  text-align: center;
+  color: black;
+  font-size: 1.071rem;
+  line-height: 50px;
+}
+.ui-kit-colors .dark_s100 {
+  background-color: #1F2041;
+}
+.ui-kit-colors .dark_s75 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+.ui-kit-colors .dark_s50 {
+  background-color: rgba(31, 32, 65, 0.5);
+}
+.ui-kit-colors .dark_s25 {
+  background-color: rgba(31, 32, 65, 0.25);
+}
+.ui-kit-colors .dark_s5 {
+  background-color: rgba(31, 32, 65, 0.5);
+}
+.ui-kit-colors .dark_s10 {
+  background-color: rgba(31, 32, 65, 0.1);
+}
+.ui-kit-colors .purple {
+  background-color: #bc9cff;
+}
+.ui-kit-colors .green {
+  background-color: #6fcf97;
+}
+.ui-kit-colors .gradient_green {
+  background: linear-gradient(180deg, #bc9cff 0%, #8BA4F9 100%);
+}
+.ui-kit-colors .gradient_purple {
+  background: linear-gradient(180deg, #6fcf97 0%, #66D2EA 100%);
+}
+
+.ui-comment {
+  text-align: center;
+  font-size: 16px;
+  padding: 2px;
+  margin: 0;
+  background-color: #6fcf97;
+}
+
+.ui-kit-box {
+  display: inline-block;
+  margin: 10px;
+  float: left;
+  border: rgba(31, 32, 65, 0.25) solid 1px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */

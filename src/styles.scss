@@ -1,6 +1,20 @@
-@import "~normalize.css";
+@import '~normalize.css';
+
+// Variables (MUST BE AT THE TOP)
+@import 'variables';
 
 // Typography
+@import 'fonts/font-face.scss';
+@import "fonts/typography";
 
-@import "fonts/font-face.scss";
+body {
+  @include montserrat(14px, $dark_s75, 400);
+}
+
+@import "blocks/btn/btn";
+
+// UI Kit temporary styles
+@import 'ui-kit_temporary_styles';
+
+
 

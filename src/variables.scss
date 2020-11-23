@@ -1,0 +1,26 @@
+// Colors
+
+$bgc: #fff;
+
+$dark_s100: #1F2041;
+$dark_s75: rgba(31, 32, 65, 0.75);
+$dark_s50: rgba(31, 32, 65, 0.50);
+$dark_s25: rgba(31, 32, 65, 0.25);
+$dark_s10: rgba(31, 32, 65, 0.10);
+$dark_s5: rgba(31, 32, 65, 0.5);
+
+$purple: #bc9cff;
+$green: #6fcf97;
+
+$gradient_primary: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+$gradient_secondary: linear-gradient(180deg, $green 0%, #66D2EA 100%);
+
+// Other
+
+@mixin transition_global {
+  transition: 0.4s;
+}
+
+@mixin box-shadow_global {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}

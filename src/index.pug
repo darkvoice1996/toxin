@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        title UI Kit
+        meta(charset="UTF-8")
+        meta(name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        meta(meta http-equiv="X-UA-Compatible" content="ie=edge")
+    body
+
+        // MIXINS
+        include fonts/font-mixins
+        include blocks/btn/btn
+
+        .ui-kit-box.ui-kit-colors
+            .ui-kit-colors__square.dark_s100 $dark_s100
+            .ui-kit-colors__square.dark_s75 $dark_s75
+            .ui-kit-colors__square.dark_s50 $dark_s50
+            .ui-kit-colors__square.dark_s25 $dark_s25
+            .ui-kit-colors__square.dark_s10 $dark_s10
+            .ui-kit-colors__square.dark_s5 $dark_s5
+            .ui-kit-colors__square.purple $purple
+            .ui-kit-colors__square.green $green
+            .ui-kit-colors__square.gradient_purple $gradient_primary
+            .ui-kit-colors__square.gradient_green $gradient_secondary
+
+        .ui-kit-box
+            p.ui-comment mixin: +title('')
+            +title(`This one is the sub-section or widget title.`)
+            hr
+            p.ui-comment mixin: +subtitle('')
+            +subtitle("Next one is the item title inside widgets.")
+            hr
+            p.ui-comment mixin: +label('')
+            +label("This is a label or CTA text.")
+            hr
+            p.ui-comment mixin: +text('')
+            +text("This is the body text which is used for most of the design, like paragraphs, lists, etc.")
+
+        .ui-kit-box
+            p.ui-comment +btn('click me')
+            +btn('click me')
+
+            p.ui-comment +btn_white('click me')
+            +btn_white('click me')
+
+            p.ui-comment +btn_minimal('click me')
+            +btn_minimal('click me')
