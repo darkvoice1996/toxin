@@ -1,5 +1,6 @@
-// Полифил. Должен находиться в самом верху
-// import {newFunc} from "./test";
-
+// Rate Button
+import './blocks/rate-button/rate-button'
+// Styles
 import './styles.css'
+
 

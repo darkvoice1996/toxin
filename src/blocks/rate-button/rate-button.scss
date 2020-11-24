@@ -1,0 +1,17 @@
+.rate-button {
+  i {
+    width: 24px;
+    height: 24px;
+  }
+
+  cursor: pointer;
+
+  color: transparent;
+  background-image: $gradient_primary;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  i:hover {
+    font-size: 23px;
+  }
+}

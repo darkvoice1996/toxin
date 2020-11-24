@@ -11,6 +11,7 @@ html(lang="en")
         // MIXINS
         include fonts/typography
         include blocks/btn/btn
+        include blocks/rate-button/rate-button
 
         // COLORS
         .ui-kit-box.ui-kit-colors
@@ -55,4 +56,8 @@ html(lang="en")
 
             p.ui-comment +btn_send('Перейти к оплате')
             +btn_send('Перейти к оплате')
+
+            // RATE BUTTON
+            p.ui-comment +rate-button
+            +rate-button
 
