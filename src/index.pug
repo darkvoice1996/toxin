@@ -9,10 +9,12 @@ html(lang="en")
     body
 
         // MIXINS
-        include fonts/font-mixins
+        include fonts/typography
         include blocks/btn/btn
 
+        // COLORS
         .ui-kit-box.ui-kit-colors
+            +title('Colors')
             .ui-kit-colors__square.dark_s100 $dark_s100
             .ui-kit-colors__square.dark_s75 $dark_s75
             .ui-kit-colors__square.dark_s50 $dark_s50
@@ -24,20 +26,24 @@ html(lang="en")
             .ui-kit-colors__square.gradient_purple $gradient_primary
             .ui-kit-colors__square.gradient_green $gradient_secondary
 
+        // TYPOGRAPHY
         .ui-kit-box
-            p.ui-comment mixin: +title('')
+            +title('Typography')
+            p.ui-comment +title('')
             +title(`This one is the sub-section or widget title.`)
             hr
-            p.ui-comment mixin: +subtitle('')
+            p.ui-comment +subtitle('')
             +subtitle("Next one is the item title inside widgets.")
             hr
-            p.ui-comment mixin: +label('')
+            p.ui-comment +label('')
             +label("This is a label or CTA text.")
             hr
-            p.ui-comment mixin: +text('')
+            p.ui-comment +text('')
             +text("This is the body text which is used for most of the design, like paragraphs, lists, etc.")
 
+        // BUTTONS
         .ui-kit-box
+            +title('Buttons')
             p.ui-comment +btn('click me')
             +btn('click me')
 
@@ -46,3 +52,7 @@ html(lang="en")
 
             p.ui-comment +btn_minimal('click me')
             +btn_minimal('click me')
+
+            p.ui-comment +btn_send('Перейти к оплате')
+            +btn_send('Перейти к оплате')
+

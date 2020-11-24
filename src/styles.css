@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import '~normalize.css';
+@import "~material-design-icons/iconfont/material-icons.css";
 @font-face {
   font-family: "Montserrat";
   src: url("./fonts/Montserrat-Regular.eot");
@@ -112,6 +113,20 @@ body {
   text-decoration: none;
   color: rgba(31, 32, 65, 0.5);
 }
+.btn__send-wrapper {
+  position: relative;
+}
+.btn__send-icon {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn_send {
+  width: 320px;
+}
 
 body {
   background-color: #F4F4F6;
@@ -140,7 +155,7 @@ body {
   background-color: rgba(31, 32, 65, 0.25);
 }
 .ui-kit-colors .dark_s5 {
-  background-color: rgba(31, 32, 65, 0.5);
+  background-color: rgba(31, 32, 65, 0.05);
 }
 .ui-kit-colors .dark_s10 {
   background-color: rgba(31, 32, 65, 0.1);
@@ -162,7 +177,7 @@ body {
   text-align: center;
   font-size: 16px;
   padding: 2px;
-  margin: 0;
+  margin: 2px;
   background-color: #6fcf97;
 }
 

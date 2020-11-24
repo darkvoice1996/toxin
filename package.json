@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/darkvoice1996/toxin#readme",
   "dependencies": {
+    "material-design-icons": "^3.0.1",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {

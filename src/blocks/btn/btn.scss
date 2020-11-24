@@ -48,6 +48,7 @@
     }
   }
 
+  // Minimal Button
   &_minimal {
     width: auto;
     height: auto;
@@ -62,5 +63,27 @@
       text-decoration: none;
       color: $dark_s50;
     }
+  }
+
+  // Send Button
+  &__send-wrapper {
+    position: relative;
+  }
+
+  &__send-icon {
+    position: absolute;
+    right: 0;
+
+    padding: 10px;
+
+    font-size: 24px;
+    color: $bgc;
+
+    cursor: pointer;
+
+  }
+
+  &_send {
+    width: 320px;
   }
 }
