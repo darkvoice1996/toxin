@@ -11,9 +11,8 @@
 
 // Blocks
 @import "blocks/btn/btn";
-@import "blocks/pagination/pagination";
 @import "blocks/rate-button/rate-button";
-
+@import "blocks/pagination/pagination";
 
 body {
   @include montserrat(14px, $dark_s75, 400);

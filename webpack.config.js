@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin') // Перекидывает файлы в бандл
 const MiniCssExtractPlugin = require('mini-css-extract-plugin') // Экспортирует стили в отдельный файл
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin') // Указывается в optimization
+const webpack = require('webpack')
 
 module.exports = {
     mode: "development",
@@ -20,9 +21,9 @@ module.exports = {
         }
     },
     optimization: {
-        splitChunks: {
-            chunks: "all", // Выводит повторяющийся код в отдельные вендорные файлы
-        },
+        // splitChunks: {
+        //     chunks: "all", // Выводит повторяющийся код в отдельные вендорные файлы
+        // },
         minimize: true,
         minimizer: [
             new CssMinimizerWebpackPlugin(),
@@ -49,6 +50,14 @@ module.exports = {
                 filename: "[name].[contenthash].css",
             }
         ),
+        new webpack.ProvidePlugin({
+            'jQuery': 'jquery',
+            'window.jQuery': 'jquery',
+            'jquery': 'jquery',
+            'window.jquery': 'jquery',
+            '$': 'jquery',
+            'window.$': 'jquery'
+        }),
     ],
     module: {
         rules: [
